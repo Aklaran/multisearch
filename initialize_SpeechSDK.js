@@ -37,7 +37,8 @@ startRecognizeOnceAsyncButton.addEventListener("click", function () {
     recognizer.recognizeOnceAsync(
     function (result) {
         startRecognizeOnceAsyncButton.disabled = false;
-        phraseDiv.innerHTML += result.text;
+        phraseDiv.value = result.text.slice(0, -1);
+        multisearch.call(phraseDiv, {keyCode: 13});
         window.console.log(result);
 
         recognizer.close();
