@@ -7,40 +7,39 @@
 </head>
 <body>
     <!-- UI Code -->
-    <input type="text" id="phraseDiv" autofocus="">
 
-    <div id="warning">
-        <h1 style="font-weight:500;">Speech Recognition Speech SDK not found (microsoft.cognitiveservices.speech.sdk.bundle.js missing).</h1>
+    <!-- <div id="warning">
+      <h1 style="font-weight:500;">Speech Recognition Speech SDK not found (microsoft.cognitiveservices.speech.sdk.bundle.js missing).</h1>
+    </div> -->
+
+    <div class='flex-align'>
+
+      <div class='flex-center'>
+
+          <!-- <table id='content'>
+            <tr>
+              <td align="right"><a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started" target="_blank">Subscription</a>:</td>
+              <td><input id="subscriptionKey" type="text" value="subscription"></td>
+            </tr>
+            <tr>
+              <td align="right">Region</td>
+              <td><input id="regionKey" type="text" value="YourSubscriptionServiceRegion"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="startRecognizeOnceAsyncButton">Start recognition</button></td>
+            </tr>
+          </table> -->
+      
+          <input type="text" id="phraseDiv" autofocus="">
+
       </div>
       
-      <div id="content" style="display:none">
-        <table width="100%">
-          <tr>
-            <td></td>
-            <td><h1 style="font-weight:500;">Microsoft Cognitive Services Speech SDK JavaScript Quickstart</h1></td>
-          </tr>
-          <tr>
-            <td align="right"><a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started" target="_blank">Subscription</a>:</td>
-            <td><input id="subscriptionKey" type="text" size="40" value="subscription"></td>
-          </tr>
-          <tr>
-            <td align="right">Region</td>
-            <td><input id="regionKey" type="text" size="40" value="YourSubscriptionServiceRegion"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><button id="startRecognizeOnceAsyncButton">Start recognition</button></td>
-          </tr>
-          <tr>
-            <td align="right" valign="top">Results</td>
-            <td><textarea id="phraseDiv" style="display: inline-block;width:500px;height:200px"></textarea></td>
-          </tr>
-        </table>
-      </div>
+    </div>
 
     <!-- Speech API SDK Reference -->
-    <script src="SpeechSDK-JavaScript-1.0.1/microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
-    <script src="initialize_SpeechSDK.js"></script>
+    <!-- <script src="SpeechSDK-JavaScript-1.0.1/microsoft.cognitiveservices.speech.sdk.bundle.js"></script>
+    <script src="initialize_SpeechSDK.js"></script> -->
 
     <!-- Optional Authorization Token Request -->
 
